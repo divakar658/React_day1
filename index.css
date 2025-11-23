@@ -1,4 +1,103 @@
-#heading
-{
-    color: red;
+/* ===== HEADER ===== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-items ul li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-items ul li:hover {
+  color: #f97316;
+}
+
+/* ===== BODY ===== */
+
+.body {
+  padding: 20px 40px;
+}
+
+.search input {
+  width: 350px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.search input:focus {
+  border-color: #f97316;
+}
+
+/* ===== RESTAURANT CARD CONTAINER ===== */
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* ===== RESTAURANT CARD ===== */
+
+/* Restaurant Card */
+.res-card {
+  width: 230px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.res-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* restaurant image */
+.res-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* restaurant name */
+.res-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: #222;
+}
+
+/* rating and ETA */
+.res-card h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 0;
+  color: #555;
 }
